@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<link href="css/stylesheet.css" rel="stylesheet">
+
+	<title>Wishes company</title>
+
+	
+<script>
+
+	var count = 0;
+
+	function changeImager(){
+		document.getElementById("article" + count).hidden = true;
+	
+		count = (count + 1) % 3;
+		var img = document.getElementById("image");
+		img.src="images/img" + count + ".png";
+		
+		document.getElementById("article" + count).hidden = false;
+		
+		return false;
+	}
+	
+	function changeImagel(){
+		document.getElementById("article" + count).hidden = true;
+	
+		count = (count + 3 - 1) % 3;
+		var img = document.getElementById("image");
+		img.src="images/img" + count + ".png";
+		
+		document.getElementById("article" + count).hidden = false;
+		
+		return false;
+	}
+</script>
+</head>
+
+<body>
+
+<div class="title">
+	<h1>WISHES</h1>
+	<h2>The human recycling company</h2>
+</div>
+	
+<div class="content">
+	<h2>News</h2>
+	<div style="position: relative;">
+		<img id="image" src="images/img0.png" width="100%" height="200" left="200px" />
+		<button class="middleright" id="clickme" onclick="changeImager();">
+			<img src="images/arrow.png" alt="button.png" border="0" width="40" height="40"/>
+		</button>
+		
+		<button class="middleleft" id="clickme" onclick="changeImagel();">
+			<img src="images/arrow.png" alt="button.png" border="0" width="40" height="40"/>
+		</button>
+		
+		<article id="article0">
+			<h3>Gift distribution</h3>
+			Yesterday, Sunday 14th April, our volunteers distributed the recycled toys at Saint-Antoine hospital in Paris.<br>
+			
+			<p> After collecting waste from various companies, our employees worked hard to recycle it into a toy for sick children 
+			living at Saint-Antoine Hospital. The distribution was a succes and the children have now new toys to distract them from they're treatment.
+			We expect to do another distribution next month to another hospital.
+			</p>
+			<p>A special thanks to our volonteer, Nadia and Theo who took care of the transportation of the toys and they're distribution.</p>
+		</article>
+
+		<article id="article1" hidden>
+			<h3>Opening of a new recycling facility</h3>
+			We are proud to announce the opening of a new facility in england within the year thank to the signing of new contract with 
+			the London branch of lego and AC Plastics.
+
+			<p>This new facility will be construct in the London suburbs and the recycled product distributed throughout England. We are looking for 
+			new volonteer, do not hesitate to contact us if you are interested.</p>
+
+		</article>
+
+		<article id="article2" hidden>
+			<h3>New RSE commitment</h3>
+			
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in tempus elit, vel tempus erat. Aenean vitae convallis lectus. Integer 
+			laoreet sodales rhoncus. Cras ac interdum diam. Suspendisse ut mauris nec felis placerat dignissim sit amet et justo. Duis sagittis volutpat 
+			dignissim. Vestibulum auctor sodales viverra. Suspendisse potenti. Donec fermentum lacinia eros, vitae ornare diam laoreet quis. Pellentesque 
+			non porttitor lacus. Vivamus pellentesque bibendum posuere. Vivamus a vulputate enim.
+			</p>
+			
+			<p>Vestibulum ligula ante, gravida at tempor eget, aliquam in diam. In sed gravida ex, vitae molestie dolor. Aliquam erat volutpat. Sed nec 
+			neque in sem tristique pulvinar a in urna. Quisque vel odio et dolor convallis vestibulum in sed sapien. Phasellus id condimentum eros, quis 
+			ultricies risus. Aliquam tempor congue vestibulum.
+			</p>
+
+		</article>
+
+
+	</div>	
+</div>
+
+<!-- Nav -->
+<div>
+	<ul class="container-nav">
+		<li><a href="home.html" alt="home">Home</a></li>
+		<li><a href="about_us.html">About us</a></li>
+		<li><a href="accomplishment.html">Accomplishment</a></li>
+		
+		<div class="dropdown">
+			<li><button onclick="myFunction()" class="dropbtn">Contact</button></li>
+			<div id="myDropdown" class="dropdown-content">
+				<a href="contact_info.html">Informations</a>
+				<a href="contact_form.html">Contact form</a>
+			</div>
+		</div>
+	</ul>
+</div>
+
+<footer>
+	Wishes
+</footer>
+
+</body>
+
+</html>

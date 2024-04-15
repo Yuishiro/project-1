@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link href="css/stylesheet.css" rel="stylesheet">
+
+	<title>Wishes company</title>
+
+</head>
+
+
+<body>
+<div class="title">
+	<h1>WISHES</h1>
+	<h2>The human recycling company</h2>
+</div>
+
+<div class="content">
+	<p class="field">*: field required</p>
+
+	<form method="post" action="https://hnitest.go.yj.fr" autocomplete="on">
+		<label for="lastname">Last name<span>*</span>:</label><br>
+        <input class="yourclass" id="lastname" type="text" name="lastname" required /> <br>
+		
+		<!-- Add nom d'usage -->
+		
+		<label for="firstname">First name<span>*</span>:</label><br>
+        <input class="yourclass" id="firstname" type="text" name="firstname" required /><br>
+		
+		<label for="country">Country<span>*</span>:</label><br>
+		<select class="yourclass" name="country" id="country" required>
+			<option value="belgium">Belgium</option>
+			<option value="england">England</option>
+			<option value="france">France</option>
+			<option value="germany">Germany</option>
+		</select> <br>
+		
+		<label for="email">email<span>*</span>:</label><br>
+        <input class="yourclass" id="mail" type="email" name="email" placeholder="yourmail@yahoo.com" required /><br>
+		
+		<label for="status">Your status:</label><br>
+		<input class="yourclass" id="status" type="radio" name="status"/>
+		<label for="status">Professional</label>
+		
+		<!-- à traduire-->
+		<input class="yourclass" id="status2" type="radio" name="status"/>
+		<label for="status2">Particulier</label> <br>
+		
+		<label for="request">Your message:</label><br>
+        <textarea class="yourclass" name="request" id="request" cols="80" rows="10"></textarea><br>
+		
+		 <input type="submit" value="Submit" id="submit">
+        
+	</form>
+</div>
+	
+<!-- Nav -->
+<div>
+	<ul class="container-nav">
+		<li><a href="home.html" alt="home">Home</a></li>
+		<li><a href="about_us.html">About us</a></li>
+		<li><a href="accomplishment.html">Accomplishment</a></li>
+		
+		<div class="dropdown">
+			<li><button onclick="myFunction()" class="dropbtn">Contact</button></li>
+			<div id="myDropdown" class="dropdown-content">
+				<a href="contact_info.html">Informations</a>
+				<a href="contact_form.html">Contact form</a>
+			</div>
+		</div>
+	</ul>
+</div>
+
+
+</body>
+
+
+
+</html>
