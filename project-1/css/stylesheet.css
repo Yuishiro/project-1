@@ -13,13 +13,14 @@ footer {
    color: black;
    text-align: center;
    background-image: linear-gradient(to right, rgb(245, 229, 27) , rgb(255,140,0));
+   width: 960px;
 }
 
 /* Navigator*/
 .container-nav {
 	position: relative;
 	left: -15%;
-	width: 15%;
+	width: 150px;
 	height: 40%;
 	background: rgba(245, 229, 27, 1);
 	margin: -3em 0 0 0;
@@ -27,6 +28,10 @@ footer {
 	transition: 1s;
 	border: 1px solid rgb(255,140,0);
 	top: 50px;
+}
+
+.container-nav h2 {
+	text-align: right;
 }
 
 .container-nav ul {
@@ -42,15 +47,15 @@ footer {
 	color: rgb(255,140,0);
 	display: block;
 	padding: 0;
-	height: 5vw;
+	height: 50px;
 	font-size: 17px;
+	width: 150px;
 }
 
 .container-nav li {
-	position: relative;
 	list-style-type: none;
 	text-align: left;
-	width: 20vw;
+	width: 20px;
 	padding: 0px;
 	margin: 0px;
 	left: -15px,
@@ -77,7 +82,7 @@ footer {
   font-size: 17px;
   border: none;
   text-align: left;
-  height: 5vw;
+  height: 50px;
 }
 
 .dropdown-content {
@@ -108,7 +113,6 @@ footer {
 	
 /* Page title */
 .title {
-	align: center;
 	color: white;
 	background-color: rgb(211,211,211);
 	background-image: linear-gradient(to right, rgb(245, 229, 27) , rgb(255,140,0));
@@ -119,11 +123,12 @@ footer {
 
 	word-spacing: 2em;
 	letter-spacing: 1.6em;
-	max-width: 960px;
+	width: 960px;
 }
 
 .title h1 {
 	display: inline-block;
+	width: 960px;
 }
 
 .title h2 {
@@ -146,14 +151,13 @@ footer {
 	
 /* Content style */
 .content{
-	align: center;
 	text-align: left;
 	border: 2px solid black;
-	width: 90%;
+	width: 864px;
 	height: 100%;
 	background-color: rgba(255,255,255,0.5);
 	position: absolute;
-	left: 10%;
+	left: 75px;
 	font-family: Arial;
 }
 
@@ -162,19 +166,23 @@ h3 {
 }
 
 /* Home page*/	
-.middleright {
-	position: relative;
-	bottom: 17vw;
-	left: 80vw;
-	font-size: 18px;
+.container {
+  position: relative;
 }
 
-.middleleft {
-	position: relative;
-	bottom: 17vw;
-	left: -7vw;
-	font-size: 18px;
-	-webkit-transform: scaleX(-1);
+.right {
+  position: absolute;
+  bottom: 50%;
+  right: 16px;
+  font-size: 18px;
+}
+
+.left {
+  position: absolute;
+  bottom: 50%;
+  left: 16px;
+  font-size: 18px;
+  -webkit-transform: scaleX(-1);
 }
 
 /* Accomplishment page */
@@ -183,8 +191,7 @@ div.gallery {
   border: 1px solid #ccc;
   float: left;
   width: 48%;
-  height: 36vw;
-  position: relative;
+  height: 20%;
   display: inline-block;
 }
 
@@ -194,7 +201,7 @@ div.gallery:hover {
 
 div.gallery img {
   width: 100%;
-  height: auto;
+  height: 275px;
 }
 
 div.desc {
@@ -209,9 +216,7 @@ div.desc {
 form span {color: red;}
 
 #submit {
-	float: right;
-	position: relative;
-	right: 10vw;
+	margin-left: 550px;
 }
 
 /* Contact info Page */
@@ -219,12 +224,16 @@ form span {color: red;}
 .content-info {
 	padding-top: 5vw;
 	padding-left: 3vw;
-	align: center;
 	text-align: left;
 	
 	font-size: 20px;
 }
 
-.content p, h2, article {
+.content p, article {
+	padding-left: 3vw;
+	padding-right: 3vw;
+}
+
+.content h2 {
 	padding-left: 3vw;
 }
